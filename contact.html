@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+    Student Name: Jason Follis
+    File Name: index.html
+    Today's Date: 7/20/2025
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="header-content">
+  <img src="images/ProfilePic.jpg" alt="photo of jason" class="profile-pic">
+  <h1>Jason Andrew Follis</h1>
+  </div>
+  <h5>Come learn who I am, and how I can help you!<h5>
+  <hr />
+ <nav>
+    <div class="underline"></div>
+    <a href="index.html">About</a> |
+    <a href="education.html">Education</a> |
+    <a href="experience.html">Experience</a> |
+    <a href="future.html">My Future</a> |
+    <a href="contact.html">Contact</a> |
+    </div>
+  </nav>
+
+  <form action="/submit-form" method="post">
+    
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="user_name" required><br><br>
+
+ 
+    <p>Preferred Contact Method:</p>
+    <input type="radio" id="email_contact" name="contact_method" value="email" required>
+    <label for="email_contact">Email</label><br>
+    <input type="radio" id="phone_contact" name="contact_method" value="phone">
+    <label for="phone_contact">Phone</label><br><br>
+
+   
+    <p>Interested In:</p>
+    <input type="checkbox" id="service1" name="interest[]" value="Full Time Employment">
+    <label for="service1">Full Time Employment</label><br>
+    <input type="checkbox" id="service2" name="interest[]" value="Contractor Work">
+    <label for="service2">Contractor Work</label><br><br>
+
+    
+    <label for="inquiry_type">Type of Inquiry:</label><br>
+    <select id="inquiry_type" name="inquiry_type" required>
+        <option value="">--Please choose an option--</option>
+        <option value="general">General Inquiry</option>
+        <option value="Technical Inquiry">Technical Support</option>
+        <option value="Computer Repair">Computer Repair</option>
+        <option value="Job Offer">Job Offer</option>
+    </select><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+        <br><br>
+        <a href="mailto:jfollis2220@gmail.com"> Email Me </a>
+        <br><br>
+        <a href="https://www.linkedin.com/in/jason-follis-10173823a/" target="_blank">
+    <img src="images/linkedinlogo.png" alt="LinkedIn Profile" style="width: 75px; height: 75px; border: 0;">
+  </a>
+  <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage" target="_blank">
+    <img src="images/indeedlogo.png" alt="LinkedIn Profile" style="width: 150px; height: 75px; border: 0;">
+    </a>
+  </body>
+  <footer>   </footer>
+</html>
